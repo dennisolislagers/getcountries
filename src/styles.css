@@ -16,19 +16,17 @@ body{
     flex-shrink: 1;
 }
 .country-container{
-    display: flex;
+    display:flex;
+    margin: 30px;
+    background-color: lightgray;
+    font-size: 20px;
     border: 1px solid black;
-    padding: 10px;
-}
-.li {
-    display: flex;
-}
-#country-list li {
-    display: flex;
-    flex-direction: column;
+    padding: 15px;
     list-style: none;
-    flex-grow: 0;
-    flex-shrink: 1;
-   justify-content: ;
-
 }
+li {
+    display:flex;
+    flex-direction:column-reverse;
+    order: 3;
+}
+
