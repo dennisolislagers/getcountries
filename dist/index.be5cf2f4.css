@@ -1,35 +1,47 @@
-body{
+body {
     display: flex;
-    width: 1200px;
+    justify-content: center;
+}
+.page-container {
+    flex-basis: 1200px;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
 #head-text{
     display:flex;
     justify-content: center;
-}
-.country-page{
-    flex-grow: 0;
-    flex-shrink: 1;
-}
-.map-of-the-world{
-    justify-content: center;
-    flex-grow: 0;
-    flex-shrink: 1;
+    font-size: 60px;
 }
 .country-container{
     display:flex;
-    order: 3;
-    margin: 30px;
     background-color: lightgray;
     font-size: 20px;
     border: 1px solid black;
-    padding: 15px;
+    padding: 50px;
     list-style: none;
+    column-count: 3;
 }
-li {
-    display:flex;
-    flex-direction:column-reverse;
-    order: 3;
+#country-list li{
+    display: flex;
+    padding: 20px;
+
 }
-
-
+.blue {
+    color: blue;
+}
+.green {
+    color:green;
+}
+.red {
+    color: red;
+}
+.yellow{
+    color: yellow;
+}
+.purple {
+    color: purple;
+}
+.white {
+    color:white;
+}
 /*# sourceMappingURL=index.be5cf2f4.css.map */

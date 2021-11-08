@@ -484,7 +484,7 @@ function createListOfCountries(countries) {
     countries.map((country)=>{
         // Maak een li-element aan om een mooie lijst te maken
         const countryElement = document.createElement('li');
-        // Stop in de lijst een IMG, een span en een p element om een blokje te maken van de gevraagde gegevens
+        // Stop in de lijst een IMG, een span en een p element om een blokje te maken van de gevraagde gegevens weergegeven op de juiste manier
         // Geef de naam van het land een class mee om later de naam een kleur te kunnen geven.
         countryElement.innerHTML = `
     <div>
@@ -496,8 +496,9 @@ function createListOfCountries(countries) {
         // Vervolgens wordt het list-element in het ul-element geplaatst
         listOfCountries.appendChild(countryElement);
     });
-    // deze functie wordt voor elk land opnieuw aangeroepen en krijgt dan de region mee. Op basis daarvan
-    // voert de switch zijn vergelijking uit, en geeft dan de naam van de class mee die wij op het element zetten.
+    // Nu de functie maken waarmee voor elk land opnieuw wordt aangeroepen en dan de region meekrijgt.
+    // Op basis daarvan voert de switch zijn vergelijking uit, en geeft dan de naam van de class mee die wij op het element zetten.
+    // In de CSS kunnen we dan de meegegeven kleur aan het land meegeven
     function getRegionClass(currentRegion) {
         switch(currentRegion){
             case 'Africa':
@@ -511,7 +512,7 @@ function createListOfCountries(countries) {
             case 'Oceania':
                 return 'purple';
             default:
-                return 'default';
+                return 'white';
         }
     }
 }
