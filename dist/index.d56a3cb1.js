@@ -467,7 +467,7 @@ async function fetchCountries() {
     try {
         const result = await _axiosDefault.default.get('https://restcountries.com/v2/all');
         const countries = result.data;
-        // Destructering
+        console.log(countries);
         // const {data: countries} = await axios.get('https://restcountries.com/v2/all');
         // Geef de data array mee aan de functie die de elementen op de Html pagina injecteert.
         // Doe dit altijd, dit is de handigste manier om gegevens op de pagina te injecteren.
