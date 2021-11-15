@@ -1,4 +1,4 @@
-
+import axios from "axios";
 
 // Maak de asynchrone functie
 
@@ -30,7 +30,7 @@ function createListOfCountries(countries) {
     });
 
 // Mijn optie.
-// Sla de data array op naar de container op de HTML pagina: de <ul> met id list-of-countries
+// Sla de data array op naar de container op de HTML pagina: de <ul> met id country-list
     const listOfCountries = document.getElementById("country-list");
 
     countries.map((country) => {

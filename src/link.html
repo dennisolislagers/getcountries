@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="countrystyle.css">
     <title>Vind een land</title>
 </head>
 <body>
-<button id="enter-button" type="button">Voer ee land in</button>
+<div>
+<form id="searchForm">Vul hier het land in:
+    <label for="country-input"></label>
+    <input type="text" id="country-input">
+    <label for="searchButton"></label>
+<button id="searchButton" type="submit">KLIK</button>
+</form>
+</div>
+<ul id="country-name"></ul>
 <script type="module" src="link.js"></script>
 </body>
 </html>
